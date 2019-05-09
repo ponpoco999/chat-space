@@ -24,42 +24,46 @@ Things you may want to cover:
 * ...
 
 
-20190506_DB設計レビュー依頼
+#20190509_DB設計レビュー依頼
 
 
 ## usersテーブル
-
 |Column|Type|Options|
 |------|----|-------|
 |name|string|index:true, null:false, unique:true|
-|mail|string|null: false|
 
 ### Association
-- has_many :messages, through: :groups
-- has_many :groups
+- has_many :messages
+- has_many :groups, through: :groups
+
+
+## groupsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|index:true, null:false, unique:true|
+
+### Association
+- has_many :messages
+- has_many :users, through: :users
 
 
 ## messagesテーブル
-
 |Column|Type|Options|
 |------|----|-------|
 |content|string|null:false|
 |image|string|null: false|
 
 ### Association
-- has_many :users, through: :groups
-- has_many :groups
-
-
-
-## groupsテーブル
-
-|Column|Type|Options|
-|------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
-
-### Association
-- belongs_to :message
+- belongs_to :user
 - belongs_to :group
 
+
+## group_usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
+
+### Association
+- belongs_to :group
+- belongs_to :user
