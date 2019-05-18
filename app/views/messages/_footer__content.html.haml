@@ -1,8 +1,7 @@
 .form
-  %form
     .form__mask
-      %input#message_content.form__text
-      %label.form__upload-icon
-        %i.fa.fa-picture-o.form__icon
-    %input.form__submit{type: "submit", value: "Send"}
-    %label.upload-label{for: "upload-icon"}
+        %input#message_content.form__text{:name => "message[content]", :placeholder => "type a message", :type => "text"}
+        %label.form__upload-icon{:for => "message_image"}
+            %i.fa.fa-picture-o.form__icon
+            %input#message_image.form__file{type:  "file"}
+    %input.form__submit{type: "submit", :value => "Send"}/
