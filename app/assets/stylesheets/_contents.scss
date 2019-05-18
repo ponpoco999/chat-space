@@ -33,7 +33,7 @@
       line-height: 40px;
       border: 1px solid $blueColor;
       box-sizing: border-box;
-      .right-header__button {
+      &__button {
         padding: 0 20px;
         color: $blueColor;
         text-decoration: none;
@@ -51,14 +51,14 @@
       .upper-message {
         display: flex;
         padding-bottom: 10px;
-        .upper-message__user {
+        &__user {
           font-size: 20px;
           color: $userfontColor;
           padding-right: 10px;
           font-weight: bold;
           line-height: 16px;
         }
-        .upper-message__date {
+        &__date {
           font-size: 12px;
           color: $datefontColor;
           line-height: 16px;
@@ -77,7 +77,7 @@
     padding: 20px 40px;
     box-sizing: border-box;
     background-color: #DDDDDD;
-    .form__mask {
+    &__mask {
       display: flex;
       width: calc(100% - 120px);
       float: left;
@@ -103,7 +103,7 @@
         display: none;
       }
     }
-    .form__submit {
+    &__submit {
       background-color: $blueColor;
       color: $whitefontColor;
       height: 50px;
