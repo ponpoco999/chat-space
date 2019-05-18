@@ -11,7 +11,7 @@
     .left-header {
       height: 100px;
       float: left;
-      .left-header__title {
+      &__title {
         float: left;
         height: 20px;
         font-size: 20px;
