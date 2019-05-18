@@ -1,0 +1,18 @@
+.any
+  = render partial: 'messages/side_bar'
+
+  .contents
+    .header
+      .left-header
+        .left-header__title
+          group.name
+          %ul.left-header__members
+            %li.member Members：
+            %li.member
+      .right-header
+        .right-header__button
+          Edit
+
+    .messages
+      = render partial: 'messages/message'
+    = render partial: 'messages/footer__content'

@@ -1,0 +1,19 @@
+.side_bar
+  .header
+    %h3.header__name
+      user-name
+    %ul.header__list
+      %li.list
+        = link_to do
+          = fa_icon 'pencil-square-o', class: 'icon'
+      %li.list
+        = link_to '#' do
+          = fa_icon 'cog', class: 'icon'
+
+  .groups
+    .group
+      .group__name
+        group.name
+
+      .group__message
+        message
