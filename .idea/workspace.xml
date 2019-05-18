@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ccae151-3072-4928-9188-cd1d1b5470d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/_contents.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/_contents.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/_side_bar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/_side_bar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/mailer.html.haml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/mailer.text.haml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/messages/_footer__content.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/messages/_footer__content.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/messages/_side_bar.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/messages/_side_bar.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/messages/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/messages/index.html.haml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -30,9 +26,18 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/messages/index.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/_contents.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1273">
+            <state relative-caret-position="-102">
               <caret line="94" column="24" lean-forward="true" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
             </state>
           </provider>
@@ -59,7 +64,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/messages/_side_bar.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-81" />
+            <state relative-caret-position="285">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -74,12 +81,14 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/_side_bar.scss" />
         <option value="$PROJECT_DIR$/app/views/messages/_footer__content.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/_contents.scss" />
+        <option value="$PROJECT_DIR$/app/views/messages/_side_bar.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/messages/index.html.haml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="40" />
-    <option name="y" value="207" />
+    <option name="x" value="344" />
+    <option name="y" value="93" />
     <option name="width" value="1280" />
     <option name="height" value="592" />
   </component>
@@ -194,15 +203,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558158244613</updated>
-      <workItem from="1558158246121" duration="4473000" />
+      <workItem from="1558158246121" duration="4649000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4473000" />
+    <option name="totallyTimeSpent" value="4649000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="207" width="1280" height="592" extended-state="0" />
+    <frame x="344" y="93" width="1280" height="592" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" />
@@ -210,9 +219,9 @@
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.1341719" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.1341719" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -258,11 +267,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/messages/_side_bar.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/_side_bar.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -271,9 +275,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/messages/_message.html.haml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/messages/index.html.haml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/messages/_footer__content.html.haml">
@@ -285,8 +286,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/_contents.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1273">
+        <state relative-caret-position="-102">
           <caret line="94" column="24" lean-forward="true" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/messages/_side_bar.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/messages/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
