@@ -1,7 +1,8 @@
 .form
-  .form__mask
-    %input#message_content.form__text{name: "message[content]", placeholder: "type a message", type: "text"}
-    %label.form__upload-icon{for: "message_image"}
-      %i.fa.fa-picture-o.form__icon
-      %input#message_image.form__file{type:  "file"}
-  %input.form__submit{type: "submit", value:  "Send"}/
+  = form_for [@group, @message] do |f|
+    .form__mask
+      = f.text_field :content, placeholder: "type a message",class: "form__text"
+      = f.label :image, class: "form__upload-icon" do
+        = fa_icon 'picture-o', class: "form__icon"
+        = f.file_field :image, class: "form__file"
+    = f.submit 'Send', class: "form__submit"
