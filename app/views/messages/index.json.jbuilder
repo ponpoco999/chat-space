@@ -5,3 +5,5 @@ json.array! @new_message do |message|
   json.created_at message.created_at.to_s
   json.id message.id
 end
+
+
