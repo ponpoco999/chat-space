@@ -43,10 +43,10 @@ $(document).on('turbolinks:load', function() {
       data: { keyword: input },
       dataType: 'json'
     })
-    .done(function(data) {
+    .done(function(users) {
       $("#user-search-result").empty();
-      if (data.length !== 0) {
-        data.forEach(function(user){
+      if (users.length !== 0) {
+        users.forEach(function(user){
         appendUser(user);
         });
       }
