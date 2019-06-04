@@ -44,7 +44,6 @@ $(document).on('turbolinks:load', function(){
       $('.form__submit').prop('disabled', false);
       scroll()
       $('.new_message')[0].reset();
-      console.log(data);
       }
 
     })
@@ -55,8 +54,8 @@ $(document).on('turbolinks:load', function(){
   });
 
     var reloadMessages = function () {
-      var last_message_id = $('.message').last().attr("data-messageId");
-      var groupId = $('.message').last().attr("data-groupId");
+      var last_message_id = $('.message').last().data('messageId', "#{message.id}");
+      var groupId = $('.message').last().data('groupId', "#{message.group_id}");
       $.ajax({
         url: `/groups/` + groupId + `/api/messages`,
         type: 'GET',
@@ -72,7 +71,7 @@ $(document).on('turbolinks:load', function(){
           })
         })
         .fail(function () {
-          console.log('error');
+          alert('error');
         });
       }
         setInterval(reloadMessages, 5000);
