@@ -49,8 +49,9 @@ $(document).on('turbolinks:load', function () {
     })
     .fail(function() {
       alert('メッセージを入力して下さい');
+      $('.form__submit').prop('disabled', false);
     })
-    return false;
+    // return false;
   })
 
   var reloadMessages = function () {
