@@ -41,8 +41,8 @@ $(document).on('turbolinks:load', function () {
       if (data.length !== 0) {
       var html = buildHTML(data);
       $('.messages').append(html);
-      $('.form__submit').prop('disabled', false);
       scroll();
+      $('.form__submit').prop('disabled', false);
       $('#new_message')[0].reset();
       }
 
@@ -75,7 +75,8 @@ $(document).on('turbolinks:load', function () {
           })
         })
         .fail(function () {
-        });
+          alert('自動更新に失敗しました');
+        })
     }
   };
   setInterval(reloadMessages, 5000);
