@@ -41,8 +41,8 @@ $(document).on('turbolinks:load', function () {
       if (data.length !== 0) {
       var html = buildHTML(data);
       $('.messages').append(html);
-      scroll();
       $('.form__submit').prop('disabled', false);
+      scroll();
       $('#new_message')[0].reset();
       }
 
