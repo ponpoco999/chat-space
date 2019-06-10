@@ -51,7 +51,7 @@ $(document).on('turbolinks:load', function () {
       alert('メッセージを入力して下さい');
       $('.form__submit').prop('disabled', false);
     })
-    // return false;
+    return false;
   })
 
   var reloadMessages = function () {
