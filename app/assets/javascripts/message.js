@@ -21,11 +21,12 @@ $(document).on('turbolinks:load', function () {
   }
 
   function scroll(){
-    $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast')
+    $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight }, 500, 'swing')
   }
 
   $('#new_message').on('submit', function(e){
     e.preventDefault();
+    
     var formData = new FormData(this);
     var url = $(this).attr('action')
 
@@ -41,17 +42,19 @@ $(document).on('turbolinks:load', function () {
       if (data.length !== 0) {
       var html = buildHTML(data);
       $('.messages').append(html);
-      $('.form__submit').prop('disabled', false);
-      $('#new_message')[0].reset();
+      $('.form__file').val('');
+      $('.form__submit').prop("disabled", false);
+      $('#new_message').get(0).reset();
       scroll();
       }
-
     })
     .fail(function() {
       alert('メッセージを入力して下さい');
       $('.form__submit').prop('disabled', false);
     })
-    return false;
+    .always(function () {
+      $(".form__submit").removeAttr("disabled");
+    });
   })
 
   var reloadMessages = function () {
