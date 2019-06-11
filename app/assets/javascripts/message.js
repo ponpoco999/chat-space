@@ -44,7 +44,7 @@ $(document).on('turbolinks:load', function () {
       $('.messages').append(html);
       $('.form__file').val('');
       $('.form__submit').prop("disabled", false);
-      $('#new_message').get(0).reset();
+      $('#new_message')[0].reset();
       scroll();
       }
     })
@@ -55,6 +55,7 @@ $(document).on('turbolinks:load', function () {
     .always(function () {
       $(".form__submit").removeAttr("disabled");
     });
+    // return false;
   })
 
   var reloadMessages = function () {
