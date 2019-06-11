@@ -53,7 +53,7 @@ $(document).on('turbolinks:load', function () {
       $('.form__submit').prop('disabled', false);
     })
     .always(function () {
-      $(".form__submit").removeAttr("disabled");
+      $(".form__submit").removeAttr("'data-disable-with'");
     });
     // return false;
   })
@@ -83,5 +83,5 @@ $(document).on('turbolinks:load', function () {
         })
     }
   };
-  setInterval(reloadMessages, 5000);
+  setInterval(reloadMessages, 3000);
 });
